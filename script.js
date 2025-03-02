@@ -1,26 +1,26 @@
 //complete this code
 class Person {
 	constructor(name,age){
-		this._name = name  // name and age is semi pvt.
-		this._age = age
+		this.name = name
+		this.age = age
 	}
 	getName(){
-		return this._name
+		return this.name
 	}
 	setAge(age){
-		this._age = age
+		this.age = age
 	}
 }
 
 class Student extends Person {
 	study(){
-		console.log(`${this._name} is studying`)
+		console.log(`${this.name} is studying`)
 	}
 }
 
 class Teacher extends Person {
 	teach(){
-		console.log(`${this._name} is teaching`)
+		console.log(`${this.name} is teaching`)
 	}
 }
 
